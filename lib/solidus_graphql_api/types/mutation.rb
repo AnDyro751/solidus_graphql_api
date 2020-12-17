@@ -18,6 +18,7 @@ module SolidusGraphqlApi
       field :empty_cart, mutation: Mutations::Checkout::EmptyCart
       field :update_cart_quantity, mutation: Mutations::Checkout::UpdateCartQuantity
       field :apply_coupon_code, mutation: Mutations::Checkout::ApplyCouponCode
+      field :remove_coupon_code, mutation: Mutations::Checkout::RemoveCouponCode
       field :set_order_email, mutation: Mutations::Checkout::SetOrderEmail
     end
   end
