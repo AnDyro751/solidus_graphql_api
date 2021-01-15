@@ -13,6 +13,8 @@ module SolidusGraphqlApi
         field :created_at, GraphQL::Types::ISO8601DateTime, null: true
         field :payment_method, Types::PaymentMethod, null: false
         field :updated_at, GraphQL::Types::ISO8601DateTime, null: true
+        field :gateway_customer_profile_id, String, null: true
+        field :gateway_payment_profile_id, String, null: true
       end
     end
   end
